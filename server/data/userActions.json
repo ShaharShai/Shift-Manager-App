@@ -1,0 +1,40 @@
+{
+  "actions": [
+    {
+      "id": "650c262efefb5ffb7f3c9945",
+      "maxActionsAllowed": 3,
+      "date": "21/09/2023",
+      "actionsLeft": 2
+    },
+    {
+      "id": "650c262efefb5ffb7f3c9945",
+      "maxActionsAllowed": 3,
+      "date": "21/09/2023",
+      "actionsLeft": 1
+    },
+    {
+      "id": "650c262efefb5ffb7f3c9945",
+      "maxActionsAllowed": 3,
+      "date": "22/09/2023",
+      "actionsLeft": 2
+    },
+    {
+      "id": "650c262efefb5ffb7f3c9945",
+      "maxActionsAllowed": 3,
+      "actionsLeft": 1,
+      "date": "22/09/2023"
+    },
+    {
+      "id": "650c262efefb5ffb7f3c9945",
+      "maxActionsAllowed": 3,
+      "actionsLeft": 0,
+      "date": "22/09/2023"
+    },
+    {
+      "id": "650c262efefb5ffb7f3c9945",
+      "maxActionsAllowed": 3,
+      "actionsLeft": 2,
+      "date": "24/09/2023"
+    }
+  ]
+}
