@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const shiftSchema = new mongoose.Schema({
-date: Date,
+date: String,
 startingHour: Number,
 endingHour: Number,
 employees: [{

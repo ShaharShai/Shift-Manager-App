@@ -1,4 +1,5 @@
 const Employee = require("../models/employeeModel");
+const Shift = require("../models/shiftModel");
 
 const getAll = async () => {
   try {
@@ -52,4 +53,21 @@ const addEmployee = async (newEmployeeData) => {
   }
 }
 
-module.exports = { getAll, getByDepartment, editEmployee, deleteEmployee, addEmployee };
+const addEmployeeToShift = async (employee, shift) => {
+  try {
+    const editedEmployee = await Employee.findById(employee);
+    const editedShift = await Shift.findById(shift);
+
+    editedEmployee.shifts.push(editedShift);
+    editedShift.employees.push(editedEmployee);
+
+    editedEmployee.save();
+    editedShift.save();
+
+    return "Added to shift Successfully !";
+  } catch (error) {
+    throw new Error("Error adding employee to shift: " + error.message);
+  }
+}
+
+module.exports = { getAll, getByDepartment, editEmployee, deleteEmployee, addEmployee, addEmployeeToShift };

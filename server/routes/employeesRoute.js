@@ -33,4 +33,12 @@ router.post("/add", jwtFunctions.authenticateToken, async (req, res) => {
     res.send(result);
 })
 
+router.post("/addShift", jwtFunctions.authenticateToken, async (req, res) => {
+    const employee = req.body.employee;
+    const shift = req.body.shift;
+    const result = await employeesBLL.addEmployeeToShift(employee, shift);
+    res.send(result);
+})
+
+
 module.exports = router;
